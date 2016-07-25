@@ -1,0 +1,19 @@
+.lcd {
+    background-color: rgba(95, 195, 255, 0.2);
+    padding: 20px;
+    border: solid 1px #5fc3ff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+
+    animation-name: down;
+    -webkit-animation-name: down;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+
+    animation-delay: .5s;
+    -webkit-animation-delay: .5s;
+}
