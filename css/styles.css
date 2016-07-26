@@ -22,7 +22,7 @@ body {
 
 .lcd {
     background-color: rgba(95, 195, 255, 0.2);
-    padding: 20px;
+    padding: 10px;
     border: solid 1px #5fc3ff;
     border-radius: 5px;
     height: 100px;
