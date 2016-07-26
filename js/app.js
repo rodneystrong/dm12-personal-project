@@ -20,6 +20,9 @@ $(document).ready(function() {
       $('.r').toggleClass('touch');
       playSound4();
     }
+    switch(e.keyCode) {
+      
+    }
   });
   $('body').on('keyup', function(e) {
     if(e.keyCode == 81) {
@@ -37,10 +40,27 @@ $(document).ready(function() {
   });
 });
 
-function playSound() {
-  $('.sound')[0].volume = 0.5;
-  $('.sound')[0].load();
-  $('.sound')[0].play();
+/*
+switch(expression) {
+    case n:
+        code block
+        break;
+    case n:
+        code block
+        break;
+    default:
+        default code block
+}
+*/
+
+//put the event listener into switch statement that checks for keyCode
+//then have it run the playsound fn that takes in a parameter of which
+//sound array
+
+function playSound(item) {
+  $('.sound')[item].volume = 0.5;
+  $('.sound')[item].load();
+  $('.sound')[item].play();
 }
 
 function playSound2() {
