@@ -4,11 +4,18 @@ body {
   color: #5fc3ff;
 }
 
+.parent {
+  display: flex;
+  height: 200px;
+}
+
 .lcd {
     background-color: rgba(95, 195, 255, 0.2);
     padding: 20px;
     border: solid 1px #5fc3ff;
     border-radius: 5px;
+    height: 100px;
+    widht: 100px;
 
     animation-name: down;
     -webkit-animation-name: down;
