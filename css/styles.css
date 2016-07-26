@@ -4,6 +4,11 @@ body {
   color: #5fc3ff;
 }
 
+.row {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
 .parent {
   display: flex;
   height: 200px;
@@ -15,7 +20,8 @@ body {
     border: solid 1px #5fc3ff;
     border-radius: 5px;
     height: 100px;
-    widht: 100px;
+    width: 100px;
+    margin: 0 10px;
 
     animation-name: down;
     -webkit-animation-name: down;
@@ -27,6 +33,7 @@ body {
 
     animation-delay: .5s;
     -webkit-animation-delay: .5s;
+    text-transform: uppercase;
 }
 
 .lcd:hover {
@@ -37,5 +44,6 @@ body {
 
 .touch {
   box-shadow: 0px 0px 10px 1px rgba(95,195,255,1);
-  transition: .2s;
+  font-size: 16px;
+  transition: 0s;
 }
