@@ -14,6 +14,12 @@ body {
   height: 200px;
 }
 
+.column {
+  display: flex;
+  flex: 1;
+  max-width: 500px;
+}
+
 .lcd {
     background-color: rgba(95, 195, 255, 0.2);
     padding: 20px;
@@ -21,7 +27,7 @@ body {
     border-radius: 5px;
     height: 100px;
     width: 100px;
-    margin: 0 10px;
+    margin: 0 2px;
     text-align: center;
 
     animation-duration: 1s;
