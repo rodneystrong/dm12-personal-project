@@ -9,19 +9,30 @@ $(document).ready(function() {
       playSound();
     }
     if(e.keyCode == 87) {
+      $('.w').toggleClass('touch');
       playSound2();
     }
     if(e.keyCode == 69) {
+      $('.e').toggleClass('touch');
       playSound3();
     }
     if(e.keyCode == 82) {
+      $('.r').toggleClass('touch');
       playSound4();
     }
   });
   $('body').on('keyup', function(e) {
     if(e.keyCode == 81) {
       $('.q').toggleClass('touch');
-      //playSound();
+    }
+    if(e.keyCode == 87) {
+      $('.w').toggleClass('touch');
+    }
+    if(e.keyCode == 69) {
+      $('.e').toggleClass('touch');
+    }
+    if(e.keyCode == 82) {
+      $('.r').toggleClass('touch');
     }
   });
 });
