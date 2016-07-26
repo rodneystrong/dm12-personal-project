@@ -24,12 +24,12 @@ body {
 
 .lcd:hover {
     transition: .2s;
-    transition: .2s;
     -moz-transition: .2s;
     box-shadow: 0px 0px 1px 0px rgba(95,195,255,1);
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 0px 30px rgba(0, 255, 255, 0.7);
 }
 
-.lcd:active {
+.touch {
   box-shadow: 0px 0px 10px 1px rgba(95,195,255,1);
+  transition: .2s;
 }
