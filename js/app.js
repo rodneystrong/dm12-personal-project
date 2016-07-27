@@ -1,13 +1,9 @@
 $(document).ready(function() {
   $('.lcd').on('click', function() {
-    playSound();
+    //playSound();
   });
-  $('body').on('keydown touchstart', function(e) {
+  $('body').on('keydown', function(e) {
     console.log(e.which);
-    // if(e.keyCode == 81) {
-    //   $('.q').toggleClass('touch');
-    //   playSound();
-    // }
     switch(e.which) {
       //top left
       case 81:
@@ -25,11 +21,6 @@ $(document).ready(function() {
       case 82:
       $('.r').toggleClass('touch');
       playSound(3);
-      break;
-
-      case 20 && 81:
-      $('.q').toggleClass('touch');
-      playSound(9);
       break;
 
       //bot left
@@ -143,6 +134,30 @@ $(document).ready(function() {
       break;
       case 76:
       $('.l').toggleClass('touch');
+    }
+  });
+
+  $('body').on('mousedown', function(e) {
+    console.log(e.target);
+    var target = $(e.target);
+    switch(target) {
+      //top left
+      case target.is$('.q'):
+      $('.q').toggleClass('touch');
+      playSound(0);
+      break;
+      case 87:
+      $('.w').toggleClass('touch');
+      playSound(1);
+      break;
+      case 69:
+      $('.e').toggleClass('touch');
+      playSound(2);
+      break;
+      case 82:
+      $('.r').toggleClass('touch');
+      playSound(3);
+      break;
     }
   });
 });
