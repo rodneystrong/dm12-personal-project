@@ -1,6 +1,6 @@
 angular
   .module('daft')
-  .controller('MainCtrl', function($scope, $stateParams, mainSrv) {
+  .controller('MainCtrl', function($scope, $stateParams, mainSrv, displaySrv) {
     $scope.test = 'lel';
 
     var id = $stateParams;
