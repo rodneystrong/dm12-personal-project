@@ -6,7 +6,7 @@ body {
     to bottom,
     rgba(0,0,0, 1.0),
     rgba(0,0,0, 0.5)
-  ),url(../img/daft-bg.jpg);
+  ),url(../img/daft-bg.jpg) center center;
   background-size: cover;
   color: #5fc3ff;
   height: 100vh;
