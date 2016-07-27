@@ -3,8 +3,8 @@ angular
   .controller('MainCtrl', function($scope, $stateParams, mainSrv) {
     $scope.test = 'lel';
 
-    $scope.qPress = "Q";
-
+    $scope.qPress = "work it";
+    $scope.wPress = "make it";
 
 
     var id = $stateParams;
