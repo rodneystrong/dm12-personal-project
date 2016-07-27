@@ -62,26 +62,27 @@ $(document).ready(function() {
       $('.o').toggleClass('touch');
       playSound(11);
       break;
-//89 85 73 79
+
       //bot right
-      case 87:
-      $('.w').toggleClass('touch');
-      playSound(1);
+      case 72:
+      $('.h').toggleClass('touch');
+      playSound(12);
       break;
-      case 87:
-      $('.w').toggleClass('touch');
-      playSound(1);
+      case 74:
+      $('.j').toggleClass('touch');
+      playSound(13);
       break;
-      case 87:
-      $('.w').toggleClass('touch');
-      playSound(1);
+      case 75:
+      $('.k').toggleClass('touch');
+      playSound(14);
       break;
-      case 87:
-      $('.w').toggleClass('touch');
-      playSound(1);
+      case 76:
+      $('.l').toggleClass('touch');
+      playSound(15);
       break;
     }
   });
+  
   $('body').on('keyup', function(e) {
     switch(e.keyCode) {
       case 81:
@@ -98,19 +99,6 @@ $(document).ready(function() {
     }
   });
 });
-
-/*
-switch(expression) {
-    case n:
-        code block
-        break;
-    case n:
-        code block
-        break;
-    default:
-        default code block
-}
-*/
 
 //put the event listener into switch statement that checks for keyCode
 //then have it run the playsound fn that takes in a parameter of which
