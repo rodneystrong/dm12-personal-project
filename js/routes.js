@@ -24,13 +24,9 @@ angular.module('daft')
 
             ]
           })
-          .state('contact', {
-            url:'/contact',
-            templateUrl:'views/contact.html'
-          })
-          .state('pricing', {
-            url:'/pricing',
-            templateUrl:'views/pricing.html'
+          .state('battle', {
+            url:'/battle',
+            templateUrl:'views/battle.html'
           });
 
 });
