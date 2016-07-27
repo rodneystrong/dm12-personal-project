@@ -12,6 +12,7 @@ angular
           case 81:
           $('.q').toggleClass('touch');
           playSound(0);
+          $('.stage').toggleClass('hide');
           break;
           case 87:
           $('.w').toggleClass('touch');
@@ -86,6 +87,7 @@ angular
           //top left
           case 81:
           $('.q').toggleClass('touch');
+          $('.stage').toggleClass('hide');
           break;
           case 87:
           $('.w').toggleClass('touch');

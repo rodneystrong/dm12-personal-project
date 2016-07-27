@@ -14,11 +14,12 @@
   <div class="row">
     {{test}}
   </div>
+  <ui-view></ui-view>
   <div class="row parent">
     <div class="column">
-      <div class="q lcd">
+      <div  class="q lcd">
         work it
-        <span class="letter">
+        <span ng-model="qPress" class="letter">
           q
         </span>
       </div>
@@ -120,6 +121,13 @@
           l
         </span>
       </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="stage hide">
+      {{qPress}}
+      {{wPress}}
     </div>
   </div>
 
