@@ -12,12 +12,12 @@ angular
           case 81:
           $('.q').toggleClass('touch');
           playSound(0);
-          $('.stage').toggleClass('hide');
+          $('.stage .q').toggleClass('hide');
           break;
           case 87:
           $('.w').toggleClass('touch');
           playSound(1);
-          $('.stage').toggleClass('hide');
+          $('.stage .w').toggleClass('hide');
           break;
           case 69:
           $('.e').toggleClass('touch');
@@ -83,16 +83,17 @@ angular
         }
       });
 
+//KEY UP
       $('body').on('keyup', function(e) {
         switch(e.keyCode) {
           //top left
           case 81:
           $('.q').toggleClass('touch');
-          $('.stage').toggleClass('hide');
+          $('.stage .q').toggleClass('hide');
           break;
           case 87:
           $('.w').toggleClass('touch');
-          $('.stage').toggleClass('hide');
+          $('.stage .w').toggleClass('hide');
           break;
           case 69:
           $('.e').toggleClass('touch');
