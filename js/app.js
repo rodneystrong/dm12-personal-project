@@ -4,24 +4,27 @@ $(document).ready(function() {
   });
   $('body').on('keydown', function(e) {
     console.log(e.keyCode);
-    if(e.keyCode == 81) {
-      $('.q').toggleClass('touch');
-      playSound();
-    }
-    if(e.keyCode == 87) {
-      $('.w').toggleClass('touch');
-      playSound2();
-    }
-    if(e.keyCode == 69) {
-      $('.e').toggleClass('touch');
-      playSound3();
-    }
-    if(e.keyCode == 82) {
-      $('.r').toggleClass('touch');
-      playSound4();
-    }
+    // if(e.keyCode == 81) {
+    //   $('.q').toggleClass('touch');
+    //   playSound();
+    // }
     switch(e.keyCode) {
-      
+      case 81:
+      $('.q').toggleClass('touch');
+      playSound(0);
+      break;
+      case 87:
+      $('.w').toggleClass('touch');
+      playSound(1);
+      break;
+      case 69:
+      $('.e').toggleClass('touch');
+      playSound(2);
+      break;
+      case 82:
+      $('.r').toggleClass('touch');
+      playSound(3);
+      break;
     }
   });
   $('body').on('keyup', function(e) {
@@ -61,22 +64,4 @@ function playSound(item) {
   $('.sound')[item].volume = 0.5;
   $('.sound')[item].load();
   $('.sound')[item].play();
-}
-
-function playSound2() {
-  $('.sound')[1].volume = 0.5;
-  $('.sound')[1].load();
-  $('.sound')[1].play();
-}
-
-function playSound3() {
-  $('.sound')[2].volume = 0.5;
-  $('.sound')[2].load();
-  $('.sound')[2].play();
-}
-
-function playSound4() {
-  $('.sound')[3].volume = 0.5;
-  $('.sound')[3].load();
-  $('.sound')[3].play();
 }
