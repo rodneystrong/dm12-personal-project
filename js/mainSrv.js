@@ -6,7 +6,7 @@ angular
       console.log(id);
     };
     $('body').on('keydown', function(e) {
-        console.log(e.which);
+        //console.log(e.which);
         switch(e.which) {
           //top left
           case 81:
