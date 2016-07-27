@@ -2,7 +2,7 @@ $(document).ready(function() {
   $('.lcd').on('click', function() {
     playSound();
   });
-  $('body').on('keydown', function(e) {
+  $('body').on('keydown touchstart', function(e) {
     console.log(e.which);
     // if(e.keyCode == 81) {
     //   $('.q').toggleClass('touch');
