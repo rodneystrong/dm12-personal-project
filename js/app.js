@@ -1,5 +1,5 @@
 angular
-  .module('daft',[]);
+  .module('daft',['ui.router']);
 
 // $(document).ready(function() {
 //   $('.lcd').on('click', function() {
