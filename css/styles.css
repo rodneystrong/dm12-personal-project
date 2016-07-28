@@ -52,6 +52,14 @@ body {
   max-width: 500px;
 }
 
+.justify {
+  justify-content: center;
+}
+
+.v-align {
+  align-items: center;
+}
+
 .lcd {
     background-color: rgba(95, 195, 255, 0.2);
     padding: 10px;
@@ -113,6 +121,11 @@ body {
   color: #ccc;
   font-size: 16px;
   transition: 0s;
+}
+
+.battle {
+  margin: 0;
+  text-align: center;
 }
 
 /*************/
