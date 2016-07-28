@@ -5,6 +5,52 @@ angular
       console.log('service');
       console.log(id);
     };
+//Battle page
+      $(document).ready(function() {
+        $('.ryu').on('mouseenter', function() {
+    		$('.ryu-still').hide();
+    		$('.ryu-ready').show();
+      	})
+      	.on('mouseleave', function() {
+      		$('.ryu-ready').hide();
+      		$('.ryu-still').show();
+      	})
+      	//when the user clicks on ryu
+      	.on('mousedown', function() {
+          console.log('lel');
+      		playHadouken();
+      		$('.ryu-ready').hide();
+      		$('.ryu-throwing').show();
+      		$('.hadouken').finish().show()
+      			.animate({
+      				'left': '300px'
+      			},
+      			500,
+      			function() {
+      				$(this).hide();
+      				$(this).css('left', '-212px');
+      			}
+      			);
+      	})
+      	.on('mouseup', function() {
+      		$('.ryu-throwing').hide();
+      		$('.ryu-ready').show();
+      		$('.hadouken').hide();
+      	});
+      	//the keyboard 'x' function for ryu-cool
+      	$("body").on('keydown', function(e) {
+      		if(e.which==88) {
+      			$('.ryu-still').hide();
+      			$('.ryu-ready').hide();
+      			$('.ryu-cool').show();
+      		}
+      	})
+      	//when the user lets go of the 'x' key
+      	.on('keyup', function() {
+      		$('.ryu-cool').hide();
+      		$('.ryu-still').show();
+      	});
+      });
     $('body').on('keydown', function(e) {
         //console.log(e.which);
         switch(e.which) {
@@ -172,50 +218,6 @@ angular
           $('.stage-l').toggleClass('hide');
         }
       });
-
-//Battle page
-      $('.ryu').on('mouseenter', function() {
-  		$('.ryu-still').hide();
-  		$('.ryu-ready').show();
-    	})
-    	.on('mouseleave', function() {
-    		$('.ryu-ready').hide();
-    		$('.ryu-still').show();
-    	})
-    	//when the user clicks on ryu
-    	.on('mousedown', function() {
-    		playHadouken();
-    		$('.ryu-ready').hide();
-    		$('.ryu-throwing').show();
-    		$('.hadouken').finish().show()
-    			.animate({
-    				'left': '300px'
-    			},
-    			500,
-    			function() {
-    				$(this).hide();
-    				$(this).css('left', '-212px');
-    			}
-    			);
-    	})
-    	.on('mouseup', function() {
-    		$('.ryu-throwing').hide();
-    		$('.ryu-ready').show();
-    		$('.hadouken').hide();
-    	});
-    	//the keyboard 'x' function for ryu-cool
-    	$("body").on('keydown', function(e) {
-    		if(e.which==88) {
-    			$('.ryu-still').hide();
-    			$('.ryu-ready').hide();
-    			$('.ryu-cool').show();
-    		}
-    	})
-    	//when the user lets go of the 'x' key
-    	.on('keyup', function() {
-    		$('.ryu-cool').hide();
-    		$('.ryu-still').show();
-    	});
 
       function playSound(item) {
         $('.sound')[item].volume = 0.2;
