@@ -199,3 +199,8 @@ body {
   left: -120px;
   float: left;
 }
+
+/*Landscapes*/
+.temple {
+  background: url('../img/templebg.gif');
+}
