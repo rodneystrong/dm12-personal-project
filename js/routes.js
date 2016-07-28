@@ -13,20 +13,14 @@ angular.module('daft')
             url: '/',
             templateUrl: 'views/home.html'
           })
-          .state('projects', {
-            // url:'/projects',
-            //commented out above to show functionality of code below
-            //type is just an arbitrary word
-            url:'/projects/:id',
-            templateUrl:'views/projects.html',
-            controller: 'MainCtrl',
-            resolve: [
-
-            ]
-          })
           .state('battle', {
             url:'/battle',
             templateUrl:'views/battle.html',
+            controller: 'MainCtrl'
+          })
+          .state('temple', {
+            url:'/temple',
+            templateUrl:'views/temple.html',
             controller: 'MainCtrl'
           });
 
