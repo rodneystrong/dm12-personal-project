@@ -24,6 +24,22 @@ angular
     $scope.rPress = "makes us";
 
     //bot left
+    $scope.aPress = "harder";
+    $scope.sPress = "better";
+    $scope.dPress = "faster";
+    $scope.fPress = "stronger";
+
+    //top right
+    $scope.yPress = "more than";
+    $scope.uPress = "ever";
+    $scope.iPress = "hour";
+    $scope.oPress = "after";
+
+    //bot right
+    $scope.hPress = "our";
+    $scope.jPress = "work is";
+    $scope.kPress = "never";
+    $scope.lPress = "over";
 
     var id = $stateParams;
     if($stateParams) {
