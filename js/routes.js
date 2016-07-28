@@ -26,7 +26,8 @@ angular.module('daft')
           })
           .state('battle', {
             url:'/battle',
-            templateUrl:'views/battle.html'
+            templateUrl:'views/battle.html',
+            controller: 'MainCtrl'
           });
 
 });
