@@ -48,11 +48,6 @@ body {
     text-transform: uppercase;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
 .lcd:hover {
     transition: .2s;
     box-shadow: 0px 0px 1px 0px rgba(95,195,255,1);
@@ -69,8 +64,13 @@ body {
   text-align: center;
 }
 
-.battle {
-  animation: fadein 3s;
+.fade-once {
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 .fade-all {
@@ -85,6 +85,7 @@ body {
 
 .hide {
   display: none;
+  transition: 1s;
 }
 
 .touch {
