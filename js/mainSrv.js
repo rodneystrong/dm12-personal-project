@@ -5,8 +5,17 @@ angular
       console.log('service');
       console.log(id);
     };
+
+    var touched = [];
+    //create an empty array
+    //push a string representing each keystroke to the array
+    //when a specific key is pressed
+    //after each push always check if the array contains
+    //either all the keypress items or a specific # of items.
+    //when the array matches the specific condition then addClass
+    //or toggleClass to make link visible.
 //Battle page
-      $(document).ready(function() {
+      
         $('.ryu').on('mouseenter', function() {
     		$('.ryu-still').hide();
     		$('.ryu-ready').show();
@@ -50,7 +59,7 @@ angular
       		$('.ryu-cool').hide();
       		$('.ryu-still').show();
       	});
-      });
+
     $('body').on('keydown', function(e) {
         //console.log(e.which);
         switch(e.which) {
