@@ -17,6 +17,9 @@ angular
     //     }
     //   });
 
+    var clicky = 0;
+
+
 
     //when the user clicks on ryu
     $(".ryu").on('mousedown', function() {
@@ -39,6 +42,9 @@ angular
       $('.ryu-throwing').hide();
       $('.ryu-ready').show();
       $('.hadouken').hide();
+      clicky++;
+      console.log(clicky);
+      checkClicky();
     });
     //the keyboard 'x' function for ryu-cool
     $("body").on('keydown', function(e) {
@@ -59,6 +65,13 @@ angular
       $('.sound')[16].volume = 0.5;
       $('.sound')[16].load();
       $('.sound')[16].play();
+    }
+
+    function checkClicky() {
+      if(clicky === 0) {
+        $('.choose-land').toggleClass('hide');
+        $('.places').toggleClass('hide');
+      }
     }
 
     //top left

@@ -22,6 +22,15 @@ angular.module('daft')
             url:'/temple',
             templateUrl:'views/temple.html',
             controller: 'MainCtrl'
-          });
-
+          })
+          .state('street', {
+            url:'/street',
+            templateUrl:'views/street.html',
+            controller: 'MainCtrl'
+          })
+          .state('ruins', {
+            url:'/ruins',
+            templateUrl:'views/ruins.html',
+            controller: 'MainCtrl'
+          })
 });

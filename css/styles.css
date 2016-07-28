@@ -213,6 +213,7 @@ body {
 .choose-land {
   background: #000;
   font-family: 'fighting spirit_PG';
+  min-height: 150px;
   position: relative;
   top: 700px;
 }
@@ -222,5 +223,15 @@ body {
 
 .temple {
   background: url('../img/templebg.gif') no-repeat center bottom;
+  background-size: cover;
+}
+
+.street {
+  background: url('../img/streetbg.gif') no-repeat center bottom;
+  background-size: cover;
+}
+
+.ruins {
+  background: url('../img/ruinsbg.gif') no-repeat center bottom;
   background-size: cover;
 }
