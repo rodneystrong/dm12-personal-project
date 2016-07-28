@@ -6,15 +6,17 @@ angular
     var clicky = 0;
     function checkClicky() {
       if(clicky === 3) {
-        $('.places').toggleClass('hide');
+        $('.place-achieve').toggleClass('hide');
+        $('.place-select').toggleClass('hide');
         console.log('clicky clicky');
+        playSound(17);
       }
     }
 
     //when the user clicks on ryu
     $(".ryu").on('mousedown', function() {
       console.log('lel');
-      playHadouken();
+      playSound(16);
       $('.ryu-ready').hide();
       $('.ryu-throwing').show();
       $('.hadouken').finish().show()
@@ -50,11 +52,17 @@ angular
       $('.ryu-ready').show();
     });
 
-    function playHadouken () {
-      $('.sound')[16].volume = 0.5;
-      $('.sound')[16].load();
-      $('.sound')[16].play();
+    function playSound(item) {
+      $('.sound')[item].volume = 0.5;
+      $('.sound')[item].load();
+      $('.sound')[item].play();
     }
+
+    // function battleSound() {
+    //   $('.sound')[16].volume = 0.5;
+    //   $('.sound')[16].load();
+    //   $('.sound')[16].play();
+    // }
 
     //top left
     $scope.qPress = "work it";

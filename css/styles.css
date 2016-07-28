@@ -204,10 +204,22 @@ body {
   float: left;
 }
 
-.places {
+.place-achieve {
   color: #000;
   font-family: 'fighting spirit_PG';
   float: right;
+}
+
+.place-select {
+  list-style-type: none;
+  position: relative;
+  top: 40px;
+}
+
+.place-select li{
+  display: inline;
+  font-size: 2rem;
+  padding: 0 20px;
 }
 
 /*Landscapes*/
