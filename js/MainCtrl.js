@@ -4,10 +4,10 @@ angular
     $scope.test = 'lel';
 
     var clicky = 0;
-    function checkClicky() {
-      if(clicky === 3) {
+    function checkClicky(item) {
+      if(item === 3) {
         $('.place-achieve').toggleClass('hide');
-        $('.place-select').toggleClass('hide');
+        $('.place-select').removeClass('hide');
         console.log('clicky clicky');
         playSound(17);
       }
@@ -35,7 +35,7 @@ angular
       $('.ryu-ready').show();
       $('.hadouken').hide();
       clicky++;
-      checkClicky();
+      checkClicky(clicky);
     });
     //the keyboard 'x' function for ryu-cool
     $("body").on('keydown', function(e) {
