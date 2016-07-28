@@ -17,9 +17,13 @@ angular
     //     }
     //   });
 
+    //top left
     $scope.qPress = "work it";
     $scope.wPress = "make it";
+    $scope.ePress = "do it";
+    $scope.rPress = "makes us";
 
+    //bot left
 
     var id = $stateParams;
     if($stateParams) {
