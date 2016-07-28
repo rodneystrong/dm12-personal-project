@@ -149,11 +149,9 @@ body {
 /*************/
 
 .main {
-  background: url('../img/templebg.gif') no-repeat center bottom;
   background-size: cover;
   background-color: white;
   margin-top: 110px;
-  padding-left: 100px;
   min-width: 1200px;
   height: 500px;
 }
@@ -204,5 +202,5 @@ body {
 
 /*Landscapes*/
 .temple {
-  background: url('../img/templebg.gif');
+  background: url('../img/templebg.gif') no-repeat center bottom;
 }
