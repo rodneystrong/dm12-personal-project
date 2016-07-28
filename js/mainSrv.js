@@ -186,7 +186,7 @@ angular
       });
 
       function playSound(item) {
-        $('.sound')[item].volume = 0.2;
+        $('.sound')[item].volume = 0.5;
         $('.sound')[item].load();
         $('.sound')[item].play();
       }

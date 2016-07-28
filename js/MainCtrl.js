@@ -17,11 +17,11 @@ angular
     //     }
     //   });
 
-    
+
     //when the user clicks on ryu
     $(".ryu").on('mousedown', function() {
       console.log('lel');
-      //playHadouken();
+      playHadouken();
       $('.ryu-ready').hide();
       $('.ryu-throwing').show();
       $('.hadouken').finish().show()
