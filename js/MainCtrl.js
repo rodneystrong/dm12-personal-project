@@ -3,24 +3,6 @@ angular
   .controller('MainCtrl', function($scope, $stateParams, mainSrv) {
     $scope.test = 'lel';
 
-    //if keydown in q then display qPress
-
-    // $('body').on('keydown', function(e) {
-    //     //console.log(e.which);
-    //     switch(e.which) {
-    //       //top left
-    //       case 81:
-    //       $scope.qPress = "work it";
-    //       break;
-    //       case 87:
-    //       $scope.wPress = "make it";
-    //     }
-    //   });
-
-    var clicky = 0;
-
-
-
     //when the user clicks on ryu
     $(".ryu").on('mousedown', function() {
       console.log('lel');
@@ -42,9 +24,6 @@ angular
       $('.ryu-throwing').hide();
       $('.ryu-ready').show();
       $('.hadouken').hide();
-      clicky++;
-      console.log(clicky);
-      checkClicky();
     });
     //the keyboard 'x' function for ryu-cool
     $("body").on('keydown', function(e) {
@@ -65,13 +44,6 @@ angular
       $('.sound')[16].volume = 0.5;
       $('.sound')[16].load();
       $('.sound')[16].play();
-    }
-
-    function checkClicky() {
-      if(clicky === 0) {
-        $('.choose-land').toggleClass('hide');
-        $('.places').toggleClass('hide');
-      }
     }
 
     //top left
