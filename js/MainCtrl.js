@@ -56,9 +56,9 @@ angular
     });
 
     function playHadouken () {
-      $('#hadouken-sound')[16].volume = 0.5;
-      $('#hadouken-sound')[16].load();
-      $('#hadouken-sound')[16].play();
+      $('.sound')[16].volume = 0.5;
+      $('.sound')[16].load();
+      $('.sound')[16].play();
     }
 
     //top left
