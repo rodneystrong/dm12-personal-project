@@ -161,7 +161,7 @@ body {
 }
 
 .fight-container {
-  float: g;
+  float: left;
   margin-top: 200px;
 }
 
@@ -212,10 +212,12 @@ body {
 /*Landscapes*/
 .choose-land {
   background: #000;
-  color: #fff;
   font-family: 'fighting spirit_PG';
   position: relative;
   top: 700px;
+}
+.choose-land a {
+  color: #fff;
 }
 
 .temple {
