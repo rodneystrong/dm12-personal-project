@@ -96,10 +96,9 @@ body {
   transition: 0s;
 }
 
+/*************/
 /* battle css*/
-/*body {
-	background: black;
-}*/
+/*************/
 
 .main {
   background-color: white;
@@ -118,7 +117,7 @@ body {
   height: 494px;
 }
 
-.ryu-ready, .ryu-throwing, .ryu-cool {
+.ryu-throwing, .ryu-cool {
   display: none;
 }
 
