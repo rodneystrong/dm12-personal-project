@@ -3,6 +3,14 @@ angular
   .controller('MainCtrl', function($scope, $stateParams, mainSrv) {
     $scope.test = 'lel';
 
+    var clicky = 0;
+    function checkClicky() {
+      if(clicky === 3) {
+        $('.places').toggleClass('hide');
+        console.log('clicky clicky');
+      }
+    }
+
     //when the user clicks on ryu
     $(".ryu").on('mousedown', function() {
       console.log('lel');
@@ -24,6 +32,8 @@ angular
       $('.ryu-throwing').hide();
       $('.ryu-ready').show();
       $('.hadouken').hide();
+      clicky++;
+      checkClicky();
     });
     //the keyboard 'x' function for ryu-cool
     $("body").on('keydown', function(e) {
@@ -75,7 +85,3 @@ angular
         mainSrv.getRecentProject(id);
     }
   });
-//how to get route working
-//how to check if all keys
-//have been pressed once to
-//then trigger an addClass
