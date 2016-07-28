@@ -15,7 +15,7 @@ angular
     //when the array matches the specific condition then addClass
     //or toggleClass to make link visible.
 //Battle page
-      
+
         $('.ryu').on('mouseenter', function() {
     		$('.ryu-still').hide();
     		$('.ryu-ready').show();
@@ -49,6 +49,7 @@ angular
       	//the keyboard 'x' function for ryu-cool
       	$("body").on('keydown', function(e) {
       		if(e.which==88) {
+            console.log(e.which);
       			$('.ryu-still').hide();
       			$('.ryu-ready').hide();
       			$('.ryu-cool').show();
@@ -57,7 +58,7 @@ angular
       	//when the user lets go of the 'x' key
       	.on('keyup', function() {
       		$('.ryu-cool').hide();
-      		$('.ryu-still').show();
+      		$('.ryu-ready').show();
       	});
 
     $('body').on('keydown', function(e) {
