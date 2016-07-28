@@ -24,10 +24,24 @@ body {
 }
 
 .title {
-  animation: fadein 1.5s;
+  /*animation: fadein 1.5s;*/
+  transition: opacity 0s 1s;
   font-family: 'Tr2n';
   font-size: 6em;
   text-align: center;
+  /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 0px 30px rgba(0, 255, 255, 0.7);*/
+  /*transition: text-shadow 3s ease-in-out;*/
+  animation: shadowpulse 5s infinite;
+}
+
+@keyframes fadein {
+  from { opacity: 0 }
+  to { opacity: 100 }
+}
+
+@keyframes shadowpulse {
+    0%, 100% { text-shadow: none;}
+    50%   { text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 0px 30px rgba(0, 255, 255, 0.8); }
 }
 
 .subtitle {
@@ -87,7 +101,8 @@ body {
 }
 
 .stage {
-  font-size: 2em;
+  font-family: 'JKAbode-LightDemo';
+  font-size: 4em;
   text-align: center;
 }
 
@@ -126,6 +141,7 @@ body {
 .battle {
   margin: 0;
   text-align: center;
+  text-transform: uppercase;
 }
 
 /*************/
