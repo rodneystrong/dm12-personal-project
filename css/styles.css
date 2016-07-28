@@ -1,3 +1,14 @@
+/*fonts*/
+@font-face {
+  font-family: 'Tr2n';
+  src: url('../fonts/Tr2n.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'JKAbode-LightDemo';
+  src: url('../fonts/JKAbode-LightDemo.ttf') format('truetype');
+}
+
 body {
   /*background: url('../img/dark_stripes.png');*/
   /*background: rgba(0, 0, 0, 0.9);
@@ -14,6 +25,14 @@ body {
 
 .title {
   animation: fadein 1.5s;
+  font-family: 'Tr2n';
+  font-size: 6em;
+  text-align: center;
+}
+
+.subtitle {
+  animation: fadein 1.5s;
+  /*font-family: 'JKAbode-LightDemo';*/
   text-align: center;
 }
 
