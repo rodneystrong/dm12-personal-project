@@ -126,7 +126,7 @@ body {
 }
 
 .hide {
-  display: none;
+  visibility: hidden;
   transition: 1s;
 }
 
