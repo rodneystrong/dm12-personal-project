@@ -9,6 +9,11 @@
   src: url('../fonts/JKAbode-LightDemo.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'fighting spirit_PG';
+  src: url('../fonts/fighting spirit_PG.ttf') format('truetype');
+}
+
 body {
   /*background: url('../img/dark_stripes.png');*/
   /*background: rgba(0, 0, 0, 0.9);
@@ -149,11 +154,10 @@ body {
 /*************/
 
 .main {
-  background-size: cover;
   background-color: white;
   margin-top: 110px;
   min-width: 1200px;
-  height: 500px;
+  height: 700px;
 }
 
 .ryu {
@@ -201,6 +205,12 @@ body {
 }
 
 /*Landscapes*/
+.choose-land {
+  background: #000;
+  font-family: 'fighting spirit_PG';
+}
+
 .temple {
   background: url('../img/templebg.gif') no-repeat center bottom;
+  background-size: cover;
 }
