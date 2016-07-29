@@ -4,12 +4,18 @@ angular
     $scope.test = 'lel';
 
     var clicky = 0;
+
+    function hideIt(elem) {
+      $(elem).toggleClass('hide');
+    }
+
     function checkClicky(item) {
       if(item === 3) {
-        $('.place-achieve').toggleClass('hide');
+        hideIt('.place-achieve');
         $('.place-select').removeClass('hide');
         console.log('clicky clicky');
         playSound(17);
+        setTimeout(console.log('3 seconds'), 3000);
       }
     }
 
